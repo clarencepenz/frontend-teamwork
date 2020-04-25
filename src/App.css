@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.App{
+    display: flex;
+    /* grid-template-columns: repeat(2, 2fr); */
+    background-color: #005561;
+    min-height: 94vh;
+}
+    

@@ -1,0 +1,47 @@
+.Sidebar{
+    margin-left: 60px!important;
+}
+
+.Sidebar li:hover{
+  border-left: crimson solid 2px;
+  padding-left: 10px;
+  color: #000!important;
+}
+
+
+.Aside{
+    border-right: silver solid 2px;
+}
+
+
+h5 , p {
+    font-size: 14px!important;
+}
+
+.Spinner{
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #16d47b; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 0.8s linear infinite;
+    margin: 20px auto;
+    transform: translate(50%, 50%);
+    vertical-align: middle!important;
+    justify-self: center!important;
+    align-self: center!important;
+    position: relative;
+    left: 900%;
+    right: 50%;
+  
+    
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

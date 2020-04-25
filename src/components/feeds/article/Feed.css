@@ -1,0 +1,136 @@
+.Feed{
+    background-color: #FCFCFC;
+    max-width: 430px;
+    min-height: 105px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.AllFeed{
+    margin-left: 100px;
+    padding-left: 60px;
+}
+
+.Feed-Single{
+    min-width: 430px!important;
+    height: 172px!important;
+    margin-left: 120px;
+    padding-left: 40px;
+}
+
+.Feed-items{
+    margin-left: 10px;
+    padding-right: 40px;
+    margin-bottom: 5px;
+    padding-top: 13px;
+}
+
+.Feed-items h5{
+    font-size: 14px!important;
+    width: 310px;
+    color: rgba(14, 14, 14, 0.53);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 151.16%;
+}
+
+.Feed-items h2{
+    font-size: 24px!important;
+    margin-bottom: 0;
+  
+}
+
+.Feed-Image{
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 13px;
+    height: 50px!important;
+    width: 50px!important;
+    background-color: darkred;
+   
+} 
+
+
+.Feed-Image > img{
+    height: 50px!important;
+    width: 50px!important;
+    border-radius: 50%;
+    border: 3px solid black;
+   
+    
+}
+
+.Feed-Links{
+    display: flex;
+    margin-top: 15px;
+    
+}
+
+.Feed-Links .Feed-Comment{
+    position: relative;
+    font-weight: 400;
+    padding-left: 10px;
+    left: 70px;
+}
+
+.Feed-Links .Feed-Comment-Main{
+    position: relative;
+    font-weight: 400;
+    padding-left: 5px;
+    left: 2px;
+}
+
+.Feed-Links .Feed-Like{
+    padding-left: 40px;
+    font-weight: 400;
+    
+}
+
+.Feed-Links .Feed-Name{
+    margin-right: 30px;
+    width: 150px;
+    font-size: 18px!important;
+}
+
+
+.Feed-Form{
+    background-color: #097886;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    min-height: 150px;
+    border: #fff solid 1px;
+}
+
+.Feed-Form > form  .Form-Body{
+    padding: 10px 0 0 10px;
+    border: none!important;
+    width: 100%;
+    min-height: 120px;
+    max-height: 120px;
+    margin-bottom: 10px;
+    
+}
+
+.Feed-Form > form > input{
+    border: none!important;
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    margin: 0;
+}
+
+.Feed-Form .Form-Button{
+    margin-bottom: 10px;
+    color:  #005561;
+    position: relative;
+    left: 83%;
+} 
+
+.Feed-Form .Form-Button-Disabled:disabled{
+    margin-bottom: 10px;
+    color:  #005561;
+    position: relative;
+    left: 83%;
+}

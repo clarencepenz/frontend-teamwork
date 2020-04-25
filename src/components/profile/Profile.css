@@ -1,0 +1,197 @@
+.Profile-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: darkred;
+    margin-left: 40px;
+    
+}
+
+.Profile-img > img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin: 0;
+    padding: 0;
+   
+    
+}
+
+.Profile-img-Edit{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: darkred;
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+
+.Profile-img-Edit > img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin: 0;
+    padding: 0;
+   
+    
+}
+
+
+.Profile-Edit{
+    margin-left: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none!important;
+}
+
+.Profile-Edit:hover{
+    color: crimson;
+}
+
+.Profile-logo{
+    display: flex;
+    margin-left: 10px;
+    height: 60px;
+    width: 60px;
+}
+
+.Profile{
+    padding-left: 60px;
+    padding-right: 120px;
+    padding-top: 20px;
+}
+
+.Profile  .Profile-Name {
+    font-size: 25px!important;
+    margin-bottom: 3!important;
+    padding-left: 15px!important;
+    width: 200px;
+    text-align: center!important;
+}
+
+
+
+
+.Profile-info{
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    padding-top: 10px;
+    text-align: left;
+    min-width: 20px;
+}
+
+.Profile-info-Edit{
+    display: flex;
+    color: #fff;
+    flex-direction: row;
+    padding-top: 10px;
+    text-align: left;
+    min-width: 10px;
+}
+
+.Profile .Profile-About {
+     margin-left: 40px!important;
+     width: fit-content;
+     text-align: center!important;
+
+ }
+
+
+.Profile-info-Edit > ul {
+   list-style: none;   
+   padding-left: 25px; 
+
+}
+
+.Profile > form > label{
+    padding-top: 5px;
+}
+
+
+.Profile-info > ul > li {
+    margin-left: 10px;
+    
+ }
+
+ .Profile-info > ul {
+    list-style: none;   
+    padding-left: 25px; 
+ 
+ }
+ 
+ 
+ .Profile-info > ul > li {
+     margin-left: 10px;
+     
+  }
+
+ .Edit{
+    list-style: none; 
+    display: flex;  
+ }
+
+ .Edit > li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+
+ .Profile  form{
+     margin-left: 20px;
+ }
+
+ .Profile  form .Select-File{
+     width: 100px;
+ }
+
+ .Profile form  .Save-File{
+    margin-left: 10px!important;
+}
+
+.Profile form .Save-Info{
+    margin-left: 10px!important;
+    position: relative;
+    top: -10px;
+}
+
+.Profile  form input {
+     border: cadetblue solid 2px;
+     border-radius: 25px;
+ }
+
+form > input:focus{
+    outline: none;
+}
+
+
+.Profile  form  textarea {
+    border: cadetblue solid 2px;
+    border-radius: 10px;
+    width: 172px;
+    margin-top: 3px;
+}
+
+form > textarea:focus {
+   outline: none;
+}
+
+.Profile  form  button {
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    background-color: crimson;
+    padding: 5px 10px 5px 10px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.Profile  form  button:hover {
+    color: #fff;
+    border: gold solid 2px;
+    background-color: lime;
+}
+

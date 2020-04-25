@@ -1,0 +1,98 @@
+.Gif{
+    margin-left: 100px;
+    padding-left: 60px;
+}
+
+.Gif-Container{
+    padding: 15px 0 10px 20px;
+    display: flex;
+}
+
+.Gif-Item{
+    background-color: #fff;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.Gif-Image{
+    width: 200px;
+    height: auto;
+    padding: 10px 0 10px 0;
+    border-radius: 10%;
+}
+
+.Gif-Name{
+    font-size: 15px;
+}
+
+.Gif-Title{
+    font-size: 22px;
+    margin: 0;
+}
+
+.Gif-Form{
+    margin-top: 20px;
+    background-color: #097886;
+    
+}
+
+.Gif-Form > form {
+    width: 400px;
+    padding-bottom: 10px;
+ }
+
+.Gif-Form > form > input{
+   width: 400px;
+   border: none;    
+}
+
+.Gif-Form .Gif-Image-Select{
+    width: 120px!important;
+    padding-left: 20px;
+    border: none; 
+    color: #097886!important; 
+ }
+
+.Gif-Form > form > input::placeholder{
+   padding-left: 10px;
+ }
+
+.Image-Gif-Container{
+    max-height: 400px;
+    max-width: 400px;
+}
+
+
+.Gif-Image-Container{
+    background-color: rgb(74, 73, 77);
+    width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.Gif-Image-Content{
+    vertical-align: middle!important;
+    justify-self: center!important;
+    align-self: center!important;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin: auto;
+    padding: 10px;
+    width: initial;
+    transform: translate(-50%, 0%);
+    height: 250px;
+    border-radius: 10%;
+}
+
+.Gif-Button{
+    position: relative;
+    left: 50%;
+    color: #097886!important;
+}
+
+.Gif-Item-single{
+    padding-left:  40px;
+    margin-left:  120px;
+}
