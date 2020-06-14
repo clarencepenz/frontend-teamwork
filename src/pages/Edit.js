@@ -10,7 +10,7 @@ class Edit extends Component {
     componentDidMount(){
         const pid =  this.props.match.params.id
         const token = localStorage.token
-        axios.get(`http://localhost:3000/api/v1/articles/${pid}`, { 
+        axios.get(`https://cipher-blog.herokuapp.com/api/v1/articles/${pid}`, { 
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : `Bearer ${token}`
@@ -26,7 +26,7 @@ class Edit extends Component {
         }
         const pid =  this.props.match.params.id
         const token = localStorage.token
-         axios.put(`http://localhost:3000/api/v1/articles/${pid}`,  data, {
+         axios.put(`https://cipher-blog.herokuapp.com/api/v1/articles/${pid}`,  data, {
              headers: {
                  'Content-Type' : 'application/json',
                  'Authorization' : `Bearer ${token}`

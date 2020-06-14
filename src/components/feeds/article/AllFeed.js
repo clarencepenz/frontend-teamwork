@@ -17,7 +17,7 @@ class AllFeed extends Component {
     
         const token = localStorage.token
 
-     axios.get('http://localhost:3000/api/v1/articles', { 
+     axios.get('https://cipher-blog.herokuapp.com/api/v1/articles', { 
         //  params: { 
         //      'token': localStorage.getItem('token')},
              headers: {
@@ -47,7 +47,7 @@ class AllFeed extends Component {
          url
      }
      const token = localStorage.token
-      axios.post('http://localhost:3000/api/v1/articles',  data, {
+      axios.post('https://cipher-blog.herokuapp.com/api/v1/articles',  data, {
         headers: {
             'Content-Type' : 'application/json',
             'Authorization' : `Bearer ${token}`
@@ -67,7 +67,7 @@ class AllFeed extends Component {
 
    handleClick = (pid) =>{
     const token = localStorage.token
-     axios.get( `http://localhost:3000/api/v1/articles/${pid}`, {
+     axios.get( `https://cipher-blog.herokuapp.com/api/v1/articles/${pid}`, {
         headers: {
             'Content-Type' : 'application/json',
             'Authorization' : `Bearer ${token}`

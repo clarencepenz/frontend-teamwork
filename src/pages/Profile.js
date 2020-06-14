@@ -17,7 +17,7 @@ export default class Profile extends Component {
         const uid = localStorage.userId
        // const author_id = localStorage.authorId
 
-        axios.put(`http://localhost:3000/api/v1/auth/profile/${uid}`, data, {
+        axios.put(`https://cipher-blog.herokuapp.com/api/v1/auth/profile/${uid}`, data, {
             headers: {
                 'content-type': 'application/json',
                 'Authorization' : `Bearer ${token}`
@@ -45,7 +45,7 @@ export default class Profile extends Component {
         const uid = localStorage.userId
     
 
-        axios.put(`http://localhost:3000/api/v1/auth/profile-social/${uid}`, data, {
+        axios.put(`https://cipher-blog.herokuapp.com/api/v1/auth/profile-social/${uid}`, data, {
             headers: {
                 'content-type': 'application/json',
                 'Authorization' : `Bearer ${token}`
@@ -71,7 +71,7 @@ export default class Profile extends Component {
         const uid = localStorage.userId
        // const author_id = localStorage.authorId
 
-        axios.put(`http://localhost:3000/api/v1/auth/profile-url/${uid}`, data, {
+        axios.put(`https://cipher-blog.herokuapp.com/api/v1/auth/profile-url/${uid}`, data, {
             headers: {
                 'content-type': 'multipart/form-data',
                 'Authorization' : `Bearer ${token}`
@@ -95,7 +95,7 @@ export default class Profile extends Component {
         const payload = {
             url: localStorage.url
         }
-        axios.put(`http://localhost:3000/api/v1/articles/url/${author_id}`,  payload, {
+        axios.put(`https://cipher-blog.herokuapp.com/api/v1/articles/url/${author_id}`,  payload, {
             headers: {
                 'content-type': 'application/json',
                 'Authorization' : `Bearer ${token}`

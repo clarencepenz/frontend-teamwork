@@ -27,7 +27,7 @@ function App() {
              { localStorage.token ? <Aside/> : ''}
                   <Route exact path="/" render={props => (
                     <React.Fragment>
-                        <About/>
+                        <Blog/>
                     </React.Fragment>
                   )} />
                

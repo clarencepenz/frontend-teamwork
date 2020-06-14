@@ -14,7 +14,7 @@ class Comment extends Component {
         const post_id = this.props.match.params.id
         const token = localStorage.token
        
-        axios.get(`http://localhost:3000/api/v1/articles/${post_id}/comments`, {
+        axios.get(`https://cipher-blog.herokuapp.com/api/v1/articles/${post_id}/comments`, {
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : `Bearer ${token}`
@@ -37,15 +37,15 @@ class Comment extends Component {
             avatar
         }
         const token = localStorage.token
-        axios.post(`http://localhost:3000/api/v1/articles/${post_id}/comments`, data, {
+        axios.post(`https://cipher-blog.herokuapp.com/api/v1/articles/${post_id}/comments`, data, {
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : `Bearer ${token}`
   
             }
         })
-        window.location.reload()
         .then(res => {
+            window.location.reload()
             res.data.comment = comment
             res.data.avatar = avatar
             res.data.author = author
@@ -58,7 +58,7 @@ class Comment extends Component {
     handleClick =(cid) =>{
         const post_id = this.props.match.params.id
         const token = localStorage.token
-        axios.delete(`http://localhost:3000/api/v1/articles/${post_id}/comments/${cid}`, {
+        axios.delete(`https://cipher-blog.herokuapp.com/api/v1/articles/${post_id}/comments/${cid}`, {
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : `Bearer ${token}`

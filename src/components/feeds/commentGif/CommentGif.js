@@ -15,7 +15,7 @@ class CommentGif extends Component {
         const gif_id = this.props.match.params.id
         const token = localStorage.token
 
-         axios.get(`http://localhost:3000/api/v1/gifs/${gif_id}/comments`, {
+         axios.get(`https://cipher-blog.herokuapp.com/api/v1/gifs/${gif_id}/comments`, {
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : `Bearer ${token}`
@@ -41,7 +41,7 @@ class CommentGif extends Component {
             avatar
         }
         const token = localStorage.token
-        axios.post(`http://localhost:3000/api/v1/gifs/${gif_id}/comments`, data, {
+        axios.post(`https://cipher-blog.herokuapp.com/api/v1/gifs/${gif_id}/comments`, data, {
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : `Bearer ${token}`
@@ -63,7 +63,7 @@ class CommentGif extends Component {
     handleClick =(cid) =>{
         const gif_id = this.props.match.params.id
         const token = localStorage.token 
-        axios.delete(`http://localhost:3000/api/v1/articles/${gif_id}/comments/${cid}`, {
+        axios.delete(`https://cipher-blog.herokuapp.com/api/v1/articles/${gif_id}/comments/${cid}`, {
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : `Bearer ${token}`

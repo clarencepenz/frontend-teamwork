@@ -22,7 +22,7 @@ class EditProfle extends Component {
     componentDidMount(){
         const uid = localStorage.userId
         const token = localStorage.token
-        axios.get(`http://localhost:3000/api/v1/auth/profile/${uid}`, {
+        axios.get(`https://cipher-blog.herokuapp.com/api/v1/auth/profile/${uid}`, {
             headers: {
                 'content-type': 'application/json',
                 'Authorization' : `Bearer ${token}`

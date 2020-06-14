@@ -23,7 +23,7 @@ class Login extends Component {
       }
       
       const token = localStorage.token
-      axios.post('http://localhost:3000/api/v1/auth/login',  User, { 
+      axios.post('https://cipher-blog.herokuapp.com/api/v1/auth/login',  User, { 
          
               headers: {
                   'Content-Type' : 'application/json',

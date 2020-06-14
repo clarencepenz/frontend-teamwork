@@ -15,7 +15,7 @@ class Article extends Component {
         const pid =  this.props.match.params.id
         const token = localStorage.token
 
-     axios.get(`http://localhost:3000/api/v1/articles/${pid}`, { 
+     axios.get(`https://cipher-blog.herokuapp.com/api/v1/articles/${pid}`, { 
         headers: {
             'Content-Type' : 'application/json',
             'Authorization' : `Bearer ${token}`
@@ -27,7 +27,7 @@ class Article extends Component {
 
     handleClick = (pid) => {
         const token = localStorage.token
-        axios.delete(`http://localhost:3000/api/v1/articles/${pid}`, { 
+        axios.delete(`https://cipher-blog.herokuapp.com/api/v1/articles/${pid}`, { 
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : `Bearer ${token}`
@@ -39,7 +39,7 @@ class Article extends Component {
 
     handleEdit = (pid) =>{
         const token = localStorage.token
-        axios.get( `http://localhost:3000/api/v1/articles/${pid}` , { 
+        axios.get( `https://cipher-blog.herokuapp.com/api/v1/articles/${pid}` , { 
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : `Bearer ${token}`

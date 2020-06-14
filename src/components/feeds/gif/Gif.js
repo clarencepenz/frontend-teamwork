@@ -14,7 +14,7 @@ class Gif extends Component {
 
     componentDidMount(){
         const token = localStorage.token
-        axios.get('http://localhost:3000/api/v1/gifs', {
+        axios.get('https://cipher-blog.herokuapp.com/api/v1/gifs', {
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : `Bearer ${token}`
@@ -26,7 +26,7 @@ class Gif extends Component {
 
     handleClick = (gid) =>{
         const token = localStorage.token
-        axios.get(`http://localhost:3000/api/v1/gifs/${gid}`, {
+        axios.get(`https://cipher-blog.herokuapp.com/api/v1/gifs/${gid}`, {
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : `Bearer ${token}`
@@ -50,7 +50,7 @@ class Gif extends Component {
         data.append('avatar',  avatar)
 
         const token = localStorage.token
-        axios.post('http://localhost:3000/api/v1/gifs', data, {
+        axios.post('https://cipher-blog.herokuapp.com/api/v1/gifs', data, {
             headers: {
                 'content-type': 'multipart/form-data',
                 'Authorization' : `Bearer ${token}`

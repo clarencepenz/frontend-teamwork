@@ -11,7 +11,7 @@ class Gifs extends Component {
     componentDidMount(){
         const gid = this.props.match.params.id
         const token = localStorage.token
-        axios.get(`http://localhost:3000/api/v1/gifs/${gid}`, {
+        axios.get(`https://cipher-blog.herokuapp.com/api/v1/gifs/${gid}`, {
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : `Bearer ${token}`
@@ -23,7 +23,7 @@ class Gifs extends Component {
 
     handleClick =(gid) =>{
         const token = localStorage.token
-        axios.delete(`http://localhost:3000/api/v1/gifs/${gid}`, {
+        axios.delete(`https://cipher-blog.herokuapp.com/api/v1/gifs/${gid}`, {
             headers: {
                 'Content-Type' : 'application/json',
                 'Authorization' : `Bearer ${token}`

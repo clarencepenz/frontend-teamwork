@@ -43,7 +43,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //                 }
                 
 //                 const token = localStorage.token
-//                 axios.post('http://localhost:3000/api/v1/auth/signup',  User, { 
+//                 axios.post('https://cipher-blog.herokuapp.com/api/v1/auth/signup',  User, { 
                    
 //                         headers: {
 //                             'Content-Type' : 'application/json',
@@ -176,7 +176,7 @@ class Register extends Component {
         }
         
         const token = localStorage.token
-        axios.post('http://localhost:3000/api/v1/auth/signup',  User, { 
+        axios.post('https://cipher-blog.herokuapp.com/api/v1/auth/signup',  User, { 
            
                 headers: {
                     'Content-Type' : 'application/json',
@@ -185,7 +185,7 @@ class Register extends Component {
                })
         .then(res => {
           console.log(res.data)
-            if (res.status === 200) {
+            if (res.status === 201) {
               this.props.history.push('/login');
               window.location.reload()
             } else {
