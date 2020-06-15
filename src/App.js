@@ -14,7 +14,6 @@ import DisplayGif from './pages/DisplayGif';
 import Profile from './pages/Profile';
 import Login from './components/users/login/Login';
 import Register from './components/users/register/Register';
-// import AllFeed from './components/feeds/article/AllFeed';
 //import NotFound from './pages/NotFound';
 
 function App() { 
