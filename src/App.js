@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
-//import Feed from './components/feeds/article/Feeds';
 import Aside from './components/utils/Aside';
 import CheckAuth from './components/CheckAuth';
 import Header from './components/utils/Header';
