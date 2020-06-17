@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
-//import Feed from './components/feeds/article/Feeds';
 import Aside from './components/utils/Aside';
 import CheckAuth from './components/CheckAuth';
 import Header from './components/utils/Header';
@@ -14,7 +13,6 @@ import DisplayGif from './pages/DisplayGif';
 import Profile from './pages/Profile';
 import Login from './components/users/login/Login';
 import Register from './components/users/register/Register';
-// import AllFeed from './components/feeds/article/AllFeed';
 //import NotFound from './pages/NotFound';
 
 function App() { 
@@ -27,7 +25,7 @@ function App() {
              { localStorage.token ? <Aside/> : ''}
                   <Route exact path="/" render={props => (
                     <React.Fragment>
-                        <Blog/>
+                        <Blog/> 
                     </React.Fragment>
                   )} />
                
