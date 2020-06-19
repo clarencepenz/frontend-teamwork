@@ -34,8 +34,6 @@ class Edit extends Component {
              }
          })
          .then(res =>  {
-               
-            //  this.setState({feed: res.data})
              this.props.history.push('/article/' + this.props.match.params.id)
          })   
          .catch(err => console.log(err))

@@ -35,7 +35,6 @@ class SingleFeed extends Component {
                     <h4 className='Feed-Name'>{this.props.feed.author ? this.props.feed.author : 'User'} </h4>
                     <p className='Feed-Comment' style={delStyle} onClick={() => this.props.handleClick(this.props.feed.pid)}>{ userId === JSON.stringify(authorId) ? 'x' : ''}</p>
                     <p className='Feed-Comment' style={delStyle} onClick={() => this.props.handleEdit(this.props.feed.pid)}><Link style={linkStyle} to ={"/edit/" + this.props.feed.pid}>{userId === JSON.stringify(authorId) ? 'edit' : ''}</Link></p>
-                {/* <p><Link style={linkStyle} to ={"article/" + this.props.feed.pid + "/comment"}>Comment</Link></p> */}
                 </div>
                 
             </div>

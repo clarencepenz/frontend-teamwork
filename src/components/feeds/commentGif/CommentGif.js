@@ -24,7 +24,6 @@ class CommentGif extends Component {
         })
        
          .then(res => {
-             // window.location.reload()
             this.setState({comment: res.data})
          })
     }
