@@ -22,6 +22,7 @@ class Comment extends Component {
             }
         })
         .then(res => this.setState({comment: res.data}))
+        this.UpdateAvatar()
 
     }
 
@@ -68,6 +69,28 @@ class Comment extends Component {
         .then(res => this.state.comment.filter(comment => comment.cid !== cid))
         window.location.reload()
         this.props.history.push(`/article/${post_id}/comment`)
+    }
+
+    UpdateAvatar = () => {
+        const token = localStorage.token
+        const post_id = this.props.match.params.id
+        const author_id = localStorage.authorId
+        
+
+        const payload = {
+            avatar: localStorage.url
+        }
+        axios.put(`http://localhost:3000/api/v1/articles/${post_id}/comments/${author_id}`,  payload, {
+            headers: {
+                'content-type': 'application/json',
+                'Authorization' : `Bearer ${token}`
+  
+            }
+        })
+        .then(res => res)  
+        .catch(err => console.log(err))
+       
+       
     }
    
 
