@@ -80,7 +80,7 @@ class Comment extends Component {
         const payload = {
             avatar: localStorage.url
         }
-        axios.put(`http://localhost:3000/api/v1/articles/${post_id}/comments/${author_id}`,  payload, {
+        axios.put(`https://cipher-blog.herokuapp.com/api/v1/articles/${post_id}/comments/${author_id}`,  payload, {
             headers: {
                 'content-type': 'application/json',
                 'Authorization' : `Bearer ${token}`
