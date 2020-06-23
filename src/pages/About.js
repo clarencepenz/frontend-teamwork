@@ -4,7 +4,7 @@ import React, { Component } from 'react'
     render() {
         return (
             <div>
-               sup 
+               <h3>About me</h3>
             </div>
         )
     }
