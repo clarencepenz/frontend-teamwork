@@ -69,7 +69,6 @@ export default class Profile extends Component {
      
         const token = localStorage.token
         const uid = localStorage.userId
-       // const author_id = localStorage.authorId
 
         axios.put(`https://cipher-blog.herokuapp.com/api/v1/auth/profile-url/${uid}`, data, {
             headers: {
